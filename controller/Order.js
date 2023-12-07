@@ -4,7 +4,7 @@ const { responseFailed, responseSuccess } = require("../utils/response");
 const mongoose = require("mongoose");
 const { Order } = require("../moduls/Order");
 const User_Seller = require("../moduls/UserSeller");
-const { Cart } = require("../moduls/cart");
+const { Cart } = require("../moduls/Cart");
 
 async function addOrder(req, res){
     try {

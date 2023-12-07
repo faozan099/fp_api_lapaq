@@ -1,4 +1,4 @@
-const { addOrder, getOrderUser, getOrderSeller } = require('../../controller/order')
+const { addOrder, getOrderUser, getOrderSeller } = require('../../controller/Order')
 const authenticateToken = require('../../middleware/Auth')
 
 const router = require('express').Router()
