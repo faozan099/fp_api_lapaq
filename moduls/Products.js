@@ -25,7 +25,7 @@ const productSchema = mongoose.Schema(
     },
     rating: {
       type: String,
-      default: null
+      default: "0.0"
     },
     cart_status:{
       type: String,
