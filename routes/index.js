@@ -6,10 +6,11 @@ const userSeller = require('./private/UserSaller')
 const produk = require("./public/Produk")
 const comment = require('./private/comments')
 const cart = require('./private/cart')
-const order = require('./private/order')
+const order = require('./private/order');
+const { responseSuccess } = require("../utils/response");
 
 router.get("/", (req, res) => {
-  res.send("welcome", res);
+  responseSuccess(200, null, "Welcome to api Lapaq", res)
 });
 
 router.use(loginRegister);
