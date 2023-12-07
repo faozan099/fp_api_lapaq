@@ -7,10 +7,14 @@ const produk = require("./public/Produk")
 const comment = require('./private/comments')
 const cart = require('./private/cart')
 const order = require('./private/order');
-const { responseSuccess } = require("../utils/response");
+const { responseSuccess, responseFailed } = require("../utils/response");
 
 router.get("/", (req, res) => {
-  responseSuccess(200, null, "Welcome to api Lapaq", res)
+  try {
+    responseSuccess(200, null, "Welcome to api Lapaq", res)
+  } catch (error) {
+    responseFailed(500, error.massage, res)
+  }
 });
 
 router.use(loginRegister);
