@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { Cart } = require("../moduls/cart");
+const { Cart } = require("../moduls/Cart");
 const { responseFailed, responseSuccess } = require("../utils/response");
 const Produk = require("../moduls/Products");
 const User = require("../moduls/UsersBuyer")
