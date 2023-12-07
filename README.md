@@ -4,9 +4,9 @@
 
 ### How To Run
 
-- npm init --y
+- npm init -y
 - npm install
-- npm rub dev
+- npm run dev
 
 ### Library
 
